@@ -1,0 +1,241 @@
+html{
+  background-color: #F5F2F2;
+  width:100%;
+  display:block;
+  float:left;
+  scroll-behavior: smooth;
+  }
+  
+main{
+height: 50vw;
+width: 100%;
+background-image: url("https://visitutahkenticoprod.blob.core.windows.net/cmsroot/visitutah/media/site-assets/three-season-photography/wasatch-metro/salt-lake-city/web2000__salt-lake-city_skyline_fall_-jay_dash_photography_img_0528.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+h1 {
+font-family: 'Vollkorn', serif;
+font-size: 5vw;
+display: inline-block;
+align-items: center;
+justify-content: center; 
+margin-top: 8vw;
+margin-bottom: 1vw;
+color: white;
+}
+
+.title {
+justify-content: center;
+text-align: center;
+margin: auto;
+padding: 12vw;
+}
+
+body{
+  height:100%;
+  margin: 0;
+
+}
+
+strong {
+  font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+#content {
+padding-right: 10vw;
+padding-left: 10vw;
+background-color:#F5F2F2;
+position: relative;
+}
+
+p{
+font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+line-height: 1.8;
+display: block;
+float:left;
+width:100%;
+justify-content: center;
+text-align: left;
+}
+
+#img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vw;
+  width: 100%;
+}
+
+#imgrow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vw; 
+}
+
+.row {
+  box-sizing: border-box;
+  float:left;
+  width: 50%;
+  padding:5px;
+}
+
+@media (max-width: 550px) {
+  .row{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  }
+  #imgrow {
+    height: 70vw;
+  }
+}
+@media (min-width: 1200px) {
+  .row{
+ box-sizing: border-box;
+ float: left;
+    width: 100%;
+   }
+  #imgrow {
+    height: 50vw;
+  }
+}
+
+figure{
+  margin: 0;
+}
+
+figcaption{
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Serif', serif;
+  color: rgb(27, 25, 25);
+}
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;  
+}
+
+@media(min-width: 1200px) {
+  #content { padding-left: 20vw; padding-right: 20vw;}
+  #img {height: 400px; width: 600px;}
+}
+
+@media(max-width: 992px) {
+  .container { padding: 20px 100px; }
+  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+
+}
+@media(max-width:768px) {
+  body { font-size: 16px; }
+  .container { padding: 10px 50px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 22px; }
+  hr { margin: 30px 0; }
+  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+}
+
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+footer{
+background-color: #b8b19e;
+display: flex;
+top: 0;
+width: 100%;
+height: 9.7em;
+z-index: 100;
+box-sizing: border-box;
+}
+
+#social{
+  display:flex;
+  align-items:center;
+  margin:0 auto;
+}
+
+h4 a{
+  font-size:1.5em;
+  display:flex;
+  justify-content:center;
+  margin-top: -5px;
+  color: black;
+}
+
+.media{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 1em;
+}
+
+.media a{
+  display: inline-block;
+  justify-content:center;
+  font-size: 1.5em;
+  margin: 0 10px 0 0;
+  color: #000000;
+  text-decoration: none;
+  padding-left:1vw;
+}
+
+.media a.fa-github:hover { 
+    color: #673ab7;
+}
+
+.media a.fa-instagram:hover { 
+    color: #B73A3A;
+}

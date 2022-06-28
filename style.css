@@ -1,0 +1,377 @@
+html{
+  background-color: #F5F2F2;
+  width:100%;
+  display:block;
+  float:left;
+  scroll-behavior: smooth;
+  }
+
+main{
+height: 50vw;
+width: 100%;
+background-image: url("https://gypsyguide.com/wp-content/uploads/2017/09/Grand-Teton-National-Park-Tour-1-1500x902.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+h1 {
+font-family: 'Vollkorn', serif;
+font-size: 8vw;
+display: flex;
+align-items: center;
+justify-content: center; 
+margin-top: 4vw;
+margin-bottom: 0;
+color: white;
+}
+
+p1 {
+font-size: 2vw;
+display: flex;
+align-items: center;
+justify-content: center; 
+margin-top: 0;
+margin-bottom: 5px;
+color: white;
+}
+
+.title {
+justify-content: center;
+text-align: center;
+margin: auto;
+padding: 12vw;
+  
+}
+
+body{
+  height:100%;
+  margin: 0;
+}
+
+#trips{
+  font-size: 2em;
+  justify-content:center;
+  text-align:center;
+  padding: 0;
+  margin-top: 0.5;
+  margin-bottom: 0;
+}
+
+.column {
+display: flex;
+flex-wrap: wrap;
+column-gap: 14px;
+justify-content: space-around;
+background-color:#F5F2F2;
+box-sizing:border-box;
+}
+  
+.row {
+display: flex;
+flex-wrap: wrap;
+row-gap: 14px;
+justify-content: space-around;
+background-color:#F5F2F2;
+box-sizing:border-box;
+
+}
+
+.imgwrap{
+position: relative;
+opacity: 1;
+z-index: 1;
+}
+
+.img-desc {
+  display: block;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+  visibility:hidden;
+  
+}
+.imgwrap:hover {
+opacity: 80%;
+transition: .32s;
+}
+.imgwrap:hover .img-desc {
+  visibility: visible;
+  transition: .32s;
+  cursor: pointer;
+}
+.img-desc:hover .imgwrap {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+#montana {
+  width:42vw;
+  
+}
+
+#montana:hover {
+opacity: 80%;
+transition: .32s;
+
+}
+
+#colorado {
+  width:42vw;
+  
+}
+
+#colorado:hover {
+opacity: 80%;
+transition: .32s;
+}
+
+#telluride {
+  width:42vw;
+  
+}
+
+#telluride:hover {
+opacity: 80%;
+transition: .32s;
+}
+
+#utah {
+  width:42vw;
+  
+}
+
+#utah:hover {
+opacity: 80%;
+transition: .32s;
+}
+
+
+
+/* START GALLERY SECTION */
+
+#gallery {
+  padding-top: 20px;
+  line-height: 0;
+  webkit-column-count:5; 
+  webkit-column-gap:5px; 
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; 
+}
+
+@media (max-width: 1200px) {
+   #gallery {
+   moz-column-count: 4;
+   webkit-column-count: 4;
+   column-count: 4;
+   }
+}
+
+@media (max-width: 1000px) {
+   #gallery {
+   moz-column-count: 3;
+   webkit-column-count: 3;
+   column-count: 3;
+   }
+}
+
+@media (max-width: 800px) {
+   #gallery {
+    moz-column-count: 2;
+    webkit-column-count: 2;
+    column-count:  2;
+   }
+}
+
+@media (max-width: 400px) {
+   #gallery {
+    moz-column-count: 1;
+    webkit-column-count: 1;
+    column-count: 1;
+   }
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; 
+}
+
+@media (max-width: 1200px) {
+   #gallery {
+    moz-column-count: 4;
+    webkit-column-count: 4;
+    column-count: 4;
+   }
+}
+
+@media (max-width: 1000px) {
+   #gallery {
+    moz-column-count: 3;
+    webkit-column-count: 3;
+    column-count: 3;
+   }
+}
+
+@media (max-width: 800px) {
+   #gallery {
+    moz-column-count: 2;
+    webkit-column-count: 2;
+    column-count: 2;
+   }
+}
+
+@media (max-width: 400px) {
+   #gallery {
+    moz-column-count: 1;
+    webkit-column-count: 1;
+    column-count:1;
+   }
+}
+/* END GALLERY SECTION */
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;  
+}
+
+@media(min-width: 1200px) {
+  #content { padding-left: 20vw; padding-right: 20vw;}
+  #img {height: 400px; width: 600px;}
+}
+
+@media(max-width: 992px) {
+  .container { padding: 20px 100px; }
+  #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+
+}
+@media(max-width:768px) {
+  body { font-size: 16px; }
+  .container { padding: 10px 50px; }
+  
+  h2 { font-size: 22px; }
+  hr { margin: 30px 0; }
+  #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+}
+
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* START FOOTER SECTION */
+footer{
+display: flex;
+top: 0;
+width: 100%;
+height: 9.7em;
+z-index: 100;
+box-sizing: border-box;
+background-color:#b8b19e;
+}
+
+.footer{
+  position:relative;
+}
+
+#social{
+  display:flex;
+  align-items:center;
+  margin:0 auto;
+}
+
+h4 {
+  font-size:1.5em;
+  display:flex;
+  justify-content:center;
+  margin-top: -5px;
+}
+
+
+.media{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 1em;
+}
+
+.media a{
+  display: inline-block;
+  justify-content:center;
+  font-size: 1.5em;
+  margin: 0 10px 0 0;
+  color: #000000!important;
+  text-decoration: none;
+  padding-left:1vw;
+}
+
+.media a.fa-github:hover { 
+    color: #673ab7!important;
+}
+
+.media a.fa-instagram:hover { 
+    color: #B73A3A!important;
+}
